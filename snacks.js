@@ -11,9 +11,16 @@ function createSlug(stringa) {
     return soluzione
 }
 
+function avarage(array) {
+    const somma = array.reduce(( acc , curr) => acc + curr , 0) 
+    const soluzione = somma / array.length
+    return soluzione
+}
+
 
 
 module.exports = {
     getInitials,
-    createSlug
+    createSlug,
+    avarage
 }
