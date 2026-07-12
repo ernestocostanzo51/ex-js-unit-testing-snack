@@ -6,6 +6,14 @@ function getInitials(x , y) {
     return parola
 }
 
+function createSlug(stringa) {
+    const soluzione = stringa.toLowerCase()
+    return soluzione
+}
+
+
+
 module.exports = {
-    getInitials
+    getInitials,
+    createSlug
 }
