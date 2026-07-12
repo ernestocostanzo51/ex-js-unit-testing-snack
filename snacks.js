@@ -17,10 +17,14 @@ function avarage(array) {
     return soluzione
 }
 
+function createSlug2(stringa){
+   return stringa.toLowerCase().replaceAll(" ", "-")
+}
 
 
 module.exports = {
     getInitials,
     createSlug,
-    avarage
+    avarage,
+    createSlug2
 }

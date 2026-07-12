@@ -1,4 +1,4 @@
-const { getInitials , createSlug , avarage } = require('./snacks.js')
+const { getInitials , createSlug , avarage , createSlug2 } = require('./snacks.js')
 
 test('La funzione getInitials restituisce le iniziali di un nome completo.', () => {
     const initials = getInitials("ernesto","costanzo")
@@ -15,3 +15,8 @@ test('La funzione getInitials restituisce le iniziali di un nome completo.', () 
    const media = avarage([ 1 , 2 , 3])
    expect(media).toBe(2)
   })
+
+  test('La funzione createSlug2 sostituisce gli spazi con -.', () => {
+   const slug = createSlug2('questo è un test')
+   expect(slug).toBe("questo-è-un-test")
+   })
