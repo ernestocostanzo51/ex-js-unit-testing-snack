@@ -1,11 +1,10 @@
-const { getInitials , createSlug , avarage , createSlug2 } = require('./snacks.js')
+const { getInitials , createSlug , avarage , createSlug2 , isPalindrome } = require('./snacks.js')
 
 test('La funzione getInitials restituisce le iniziali di un nome completo.', () => {
     const initials = getInitials("ernesto","costanzo")
     expect(initials).toBe("ec")
  })
 
- 
  test('La funzione createSlug restituisce una stringa in lowercase.', () => { 
     const slug = createSlug('ERNESTO')
     expect(slug).toBe('ernesto')
@@ -20,3 +19,8 @@ test('La funzione getInitials restituisce le iniziali di un nome completo.', () 
    const slug = createSlug2('questo è un test')
    expect(slug).toBe("questo-è-un-test")
    })
+
+   test('La funzione isPalindrome verifica se una stringa è un palindromo.', () => {
+      const palindromo = isPalindrome('anna')
+      expect(palindromo).toBe(true)
+    })

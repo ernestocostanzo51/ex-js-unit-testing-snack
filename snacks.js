@@ -22,9 +22,17 @@ function createSlug2(stringa){
 }
 
 
+function isPalindrome(testo) {
+    let testoInvertito = "";
+    for (let i = testo.length - 1; i >= 0; i--) {
+        testoInvertito += testo[i]; 
+    }
+    return testo === testoInvertito;
+}
 module.exports = {
     getInitials,
     createSlug,
     avarage,
-    createSlug2
+    createSlug2,
+    isPalindrome
 }
